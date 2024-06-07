@@ -22,7 +22,7 @@ class SessionAuth(Auth):
             return session_id
 
     def user_id_for_session_id(self, session_id: str = None) -> str:
-        """Retrieves user id of the user associated with
+        """Retrieves user id of user associated with
         a given session id.
         """
         if type(session_id) is str:
