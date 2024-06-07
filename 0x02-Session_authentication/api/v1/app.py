@@ -54,7 +54,7 @@ def forbidden(error) -> str:
 
 @app.before_request
 def authenticate_user():
-    """Authenticates a user before processing request.
+    """Authenticates user before processing request.
     """
     if auth:
         excluded_paths = [
